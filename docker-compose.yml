@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  chroma-db:
+    image: yugabyte/yugabyte:latest
+    ports:
+      - "5433:5433"
+    networks:
+      - chroma-network
+    volumes:
+      - chroma-data:/home/yugabyte/var
+
+networks:
+  chroma-network:
+
+volumes:
+  chroma-data:

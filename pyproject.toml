@@ -1,0 +1,21 @@
+[project]
+name = "ollama-rag-showcase"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Christoph Burnicki", email = "christoph.burnicki@gmail.com"},
+]
+dependencies = [
+    "ollama>=0.1.8",
+    "transformers>=4.40.1",
+    "langchain>=0.1.16",
+    "faiss-cpu>=1.8.0",
+    "langchain-openai>=0.1.6",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
